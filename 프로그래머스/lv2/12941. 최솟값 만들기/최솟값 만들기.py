@@ -1,6 +1,5 @@
 def solution(A,B):
     answer = 0
-    number_dictionary = {}
     # 정렬, 최솟값 구할 준비 
     A.sort()
     B.sort(reverse=True)
