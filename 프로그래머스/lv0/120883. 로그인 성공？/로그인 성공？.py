@@ -1,11 +1,13 @@
 def solution(id_pw, db):
     answer = ''
-    for db_unit in db:
-        if id_pw[0] == db_unit[0]:
-            answer = "wrong pw"
-            if db_unit[1] == id_pw[1]:
-                answer = "login"
-            return answer
-    else:
-        answer = "fail"        
+    for i in db:
+        # 둘다 일치
+        if id_pw[0] == i[0] and id_pw[1] == i[1]:
+            return 'login'
+        # id만 일치
+        elif id_pw[0] == i[0]:
+            return 'wrong pw'
+        # 일치 X
+        else:
+            answer = 'fail'
     return answer
