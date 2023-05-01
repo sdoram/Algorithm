@@ -1,14 +1,8 @@
 def solution(s):
-    # 문자열 s
-    # in으로 확인하기 
-    answer = ''
-    s_list = {}
+    s_dict = {}
     for i in s:
-        if i in s_list:
-            s_list[i] += 1
-        elif not i in s_list:
-            s_list[i] = 1
-    for i in sorted(s_list.keys()):
-        if s_list[i] == 1:
-            answer += i
-    return answer
+        if i not in s_dict:
+            s_dict[i] = 1
+        elif i in s_dict:
+            s_dict[i] += 1
+    return ''.join([i for i in sorted(s_dict.keys()) if s_dict[i] == 1])
