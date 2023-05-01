@@ -1,4 +1,12 @@
 def solution(s):
-    # for문 = set()으로 중복을 제거하고 sorted()로 정렬된 s
-    # i = count로 확인된 숫자가 1개인 변수
-    return ''.join([i for i in sorted(s) if s.count(i) == 1])
+    answer = ''
+    for n in set(s):
+        # 첫번째 index 찾기
+        first_index = s.index(n)
+        # 두번째 index 찾기 시도
+        try:
+            _ = s.index(n, first_index+1)
+        # 두번째 index가 없을 경우 except ValueError:
+        except ValueError:
+            answer += n
+    return ''.join(sorted(answer))
