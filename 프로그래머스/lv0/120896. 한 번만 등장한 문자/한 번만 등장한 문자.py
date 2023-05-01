@@ -1,8 +1,4 @@
 def solution(s):
-    s_dict = {}
-    for i in s:
-        if i not in s_dict:
-            s_dict[i] = 1
-        elif i in s_dict:
-            s_dict[i] += 1
-    return ''.join([i for i in sorted(s_dict.keys()) if s_dict[i] == 1])
+    # for문 = set()으로 중복을 제거하고 sorted()로 정렬된 s
+    # i = count로 확인된 숫자가 1개인 변수
+    return ''.join([i for i in sorted(s) if s.count(i) == 1])
