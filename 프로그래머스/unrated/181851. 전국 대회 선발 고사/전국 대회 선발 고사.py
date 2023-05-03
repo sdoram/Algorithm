@@ -1,3 +1,4 @@
 def solution(rank, attendance):
-    answer = 0
-    return answer
+    a_list = []
+    [a_list.append(rank.index(r)) for r in sorted(rank) if attendance[rank.index(r)] == True]
+    return a_list[0]*10000+a_list[1]*100+a_list[2]
