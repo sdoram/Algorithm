@@ -7,14 +7,8 @@ for n in range(len(WORD) // K):
     else:
         REVERSE_WORD = WORD[n * K : (n + 1) * K]
         NEW_WORD.append(REVERSE_WORD[::-1])
-WORD_LIST = []
-for nw in NEW_WORD:
-    word = []
-    for w in nw:
-        word.append(w)
-    WORD_LIST.append(word)
-WORD_LIST = list(zip(*WORD_LIST))
-FIRST_WORD = ""
-for word in WORD_LIST:
-    FIRST_WORD += "".join(word)
-print(FIRST_WORD)
+ANSWER = ""
+for NW in range(len(NEW_WORD[0])):
+    for N in NEW_WORD:
+        ANSWER += N[NW]
+print(ANSWER)
