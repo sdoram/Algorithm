@@ -10,8 +10,6 @@ def solution(n, arr1, arr2):
     answer = []
     for i in range(n):
         bin_ar = f"{int(bin(arr1[i])[2:]) + int(bin(arr2[i])[2:]):0>{n}}"
-        bin_ar = bin_ar.replace('0',' ')
-        bin_ar = bin_ar.replace('1','#')
-        bin_ar = bin_ar.replace('2','#')
+        bin_ar = bin_ar.replace('0',' ').replace('1','#').replace('2','#')
         answer.append(bin_ar)
     return answer
