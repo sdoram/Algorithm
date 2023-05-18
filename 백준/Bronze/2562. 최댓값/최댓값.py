@@ -1,8 +1,5 @@
-max_num = 0
-for index in range(1, 10):
-    a = int(input())
-    if max_num < a:
-        max_num = a
-        num_count = index
-print(max_num)
-print(num_count)
+from sys import stdin
+
+num_list = [int(stdin.readline()) for _ in range(9)]
+print(max(num_list))
+print(num_list.index(max(num_list)) + 1)
