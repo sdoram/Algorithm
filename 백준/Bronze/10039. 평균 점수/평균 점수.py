@@ -1,8 +1,1 @@
-total_score = 0
-for _ in range(5):
-    a = int(input())
-    if a < 40:
-        a = 40
-    total_score += a
-
-print(total_score//5)
+print(sum([max(int(input()), 40) for _ in range(5)]) // 5)
