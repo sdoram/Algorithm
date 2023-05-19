@@ -1,0 +1,1 @@
+solution = lambda x : [n.upper() if i % 2 else n.lower() for i,n in enumerate(x)]
