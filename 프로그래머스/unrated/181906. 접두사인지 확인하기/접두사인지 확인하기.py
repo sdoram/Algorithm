@@ -1,1 +1,1 @@
-solution = lambda s,p: 1 if s[:len(p)] == p else 0
+solution = lambda s,p: int(s[:len(p)] == p)
