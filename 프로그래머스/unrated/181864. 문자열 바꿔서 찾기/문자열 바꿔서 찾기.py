@@ -1,0 +1,1 @@
+solution = lambda s,p: 1 if p.replace('A','C').replace('B','A').replace('C','B') in s else 0
