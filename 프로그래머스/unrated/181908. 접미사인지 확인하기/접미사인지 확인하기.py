@@ -1,0 +1,1 @@
+solution = lambda s,f: int(s[len(s)-len(f):] == f)
