@@ -1,0 +1,1 @@
+solution = lambda a,n: [a[x] if len(a)%2 == x%2 else a[x]+n for x in range(len(a))]
