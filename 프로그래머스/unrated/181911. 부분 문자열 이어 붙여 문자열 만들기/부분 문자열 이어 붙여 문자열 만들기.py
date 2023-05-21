@@ -1,0 +1,1 @@
+solution = lambda s,p: ''.join([s[x][p[x][0]:p[x][1]+1] for x in range(len(s))])
