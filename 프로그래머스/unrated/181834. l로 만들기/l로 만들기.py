@@ -1,1 +1,1 @@
-solution = lambda s:''.join(['l' if ord('l') > ord(x) else x for x in s])
+solution = lambda s:''.join(['l' if 'l' > x else x for x in s])
