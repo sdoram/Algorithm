@@ -1,1 +1,1 @@
-solution = lambda n: [x for x in n[::5]]
+solution = lambda n: n[::5]
