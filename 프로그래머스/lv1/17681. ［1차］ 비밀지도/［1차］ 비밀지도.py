@@ -8,8 +8,8 @@ def solution(n, arr1, arr2):
     # arr1과 arr2가 아무나 1이라면 1 아니라면 0
     # 채우기
     answer = []
-    for i in range(n):
-        bin_ar = f"{int(bin(arr1[i])[2:]) + int(bin(arr2[i])[2:]):0>{n}}"
+    for a1,a2 in zip(arr1,arr2):
+        bin_ar = f"{int(bin(a1)[2:]) + int(bin(a2)[2:]):0>{n}}"
         bin_ar = bin_ar.replace('0',' ').replace('1','#').replace('2','#')
         answer.append(bin_ar)
     return answer
