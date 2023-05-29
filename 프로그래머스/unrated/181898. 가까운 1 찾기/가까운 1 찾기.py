@@ -1,0 +1,1 @@
+solution = lambda a,i: ''.join(map(str,a)).find('1',i)
