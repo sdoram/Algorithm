@@ -1,0 +1,1 @@
+solution = lambda intstr,k,s,l: [int(j[s:s+l]) for j in intstr if int(j[s:s+l])>k]
