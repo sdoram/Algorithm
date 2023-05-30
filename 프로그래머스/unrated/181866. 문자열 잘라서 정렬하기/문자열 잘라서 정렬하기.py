@@ -1,0 +1,1 @@
+solution = lambda s: [i for i in sorted(s.split('x')) if i]
