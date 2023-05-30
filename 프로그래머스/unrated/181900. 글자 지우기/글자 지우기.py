@@ -1,0 +1,1 @@
+solution = lambda s, i: ''.join([s[l] for l in range(len(s)) if l not in i])
