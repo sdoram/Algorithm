@@ -1,0 +1,1 @@
+solution = lambda board, k: sum([board[boa][b] for boa in range(len(board)) for b in range(len(board[boa])) if boa+b <= k])
