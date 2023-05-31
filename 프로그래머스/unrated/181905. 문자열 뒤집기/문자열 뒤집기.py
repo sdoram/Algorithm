@@ -1,0 +1,1 @@
+solution = lambda my_string, s, e: my_string.replace(my_string[s:e+1], my_string[e:None if s-1 < 0 else s-1:-1])
