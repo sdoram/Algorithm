@@ -7,9 +7,6 @@ for _ in range(M):
     min_single = min(min_single, single)
 
 I, J = divmod(N, 6)
-if min_package / 6 > min_single:
-    print(N * min_single)
-elif min_package < min_single * J:
-    print((I + 1) * min_package)
-else:
-    print(I * min_package + J * min_single)
+
+print(min(N * min_single, (I + 1) * min_package, I * min_package + J * min_single))
+
