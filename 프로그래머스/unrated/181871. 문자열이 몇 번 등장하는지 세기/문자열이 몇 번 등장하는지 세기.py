@@ -1,0 +1,1 @@
+solution = lambda myString, pat: sum([True for n in range(len(myString)) if pat in myString[n:n+len(pat)]])
