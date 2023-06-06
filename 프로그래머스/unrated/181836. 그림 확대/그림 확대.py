@@ -1,0 +1,1 @@
+solution = lambda picture, k: [''.join([x*k for x in p])  for p in picture for _ in range(k)]
