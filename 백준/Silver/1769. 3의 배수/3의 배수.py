@@ -1,6 +1,6 @@
-X = [int(n) for n in input()]
+X = input()
 COUNT = 0
 while len(X) > 1:
-    X = [int(n) for n in str(sum(X))]
+    X = str(sum(map(int, list(X))))
     COUNT += 1
-print(COUNT, "YES" if X[0] % 3 == 0 else "NO", sep="\n")
+print(COUNT, "YES" if int(X) % 3 == 0 else "NO", sep="\n")
