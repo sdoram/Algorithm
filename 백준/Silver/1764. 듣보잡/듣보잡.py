@@ -1,11 +1,11 @@
 N, M = map(int, input().split())
-persons = {}
+persons_set = set()
+unknown_set = set()
 for _ in range(N + M):
     name = input()
-    if name not in persons:
-        persons[name] = 1
+    if name not in persons_set:
+        persons_set.add(name)
     else:
-        persons[name] += 1
-unknown_list = [i[0] for i in sorted(persons.items()) if i[1] == 2]
-print(len(unknown_list))
-print("\n".join(unknown_list))
+        unknown_set.add(name)
+print(len(unknown_set))
+print("\n".join(sorted(unknown_set)))
