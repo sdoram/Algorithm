@@ -1,6 +1,3 @@
 def solution(food):
-    answer = [str(i)*(f//2) for i,f in enumerate(food)]
-    answer.append('0')
-    for f in sorted(answer[:-1:], reverse=True):
-        answer.append(f)
-    return ''.join(answer)
+    answer = [str(i)*(f//2) for i, f in enumerate(food)]
+    return ''.join(answer + ['0'] + answer[::-1])
