@@ -1,0 +1,1 @@
+solution = lambda t, p: sum([True for i in range(len(t)-len(p)+1) if int(p) >= int(t[i:i+len(p)])])
