@@ -1,4 +1,2 @@
-a, b = map(int, input().split())
-total = b * 2
-c = total - a
-print(c)
+R1, S = map(int, input().split())
+print(S * 2 - R1)
