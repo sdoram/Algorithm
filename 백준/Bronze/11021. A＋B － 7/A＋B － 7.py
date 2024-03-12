@@ -1,6 +1,4 @@
 import sys
-a = int(input())
 
-for i in range(1, a+1):
-    b, c = map(int, sys.stdin.readline().split())
-    print(f'Case #{i}: {b+c}')
+for i in range(1, int(sys.stdin.readline()) + 1):
+    print(f"Case #{i}: {sum(map(int, sys.stdin.readline().split()))}")
