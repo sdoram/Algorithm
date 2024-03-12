@@ -1,3 +1,2 @@
-import sys
-A, I = map(int, sys.stdin.readline().split())
+A, I = map(int,input().split())
 print(A*(I-1)+1)
