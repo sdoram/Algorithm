@@ -1,8 +1,6 @@
+import sys
 while True:
-    a, b = map(int, input().split())
-    if a == 0 and b == 0:
+    A, B = map(int, sys.stdin.readline().split())
+    if A == 0 and B == 0:
         break
-    if a <= b:
-        print('No')
-    elif a > b:
-        print('Yes')
+    print('Yes' if A > B else 'No')
