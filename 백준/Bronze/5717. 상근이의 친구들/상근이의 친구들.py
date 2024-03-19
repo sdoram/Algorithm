@@ -1,5 +1,6 @@
+import sys
 while True:
-    FRIENDS = list(map(int, input().split()))
-    if sum(FRIENDS) == 0:
+    M, F = map(int, sys.stdin.readline().split())
+    if M == 0 and F == 0:
         break
-    print(sum(FRIENDS))
+    print(M+F)
