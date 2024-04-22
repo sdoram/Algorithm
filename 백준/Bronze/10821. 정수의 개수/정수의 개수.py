@@ -1,2 +1,2 @@
 import sys
-print(len(list(map(int, sys.stdin.readline().split(',')))))
+print(len(list(sys.stdin.readline().split(','))))
