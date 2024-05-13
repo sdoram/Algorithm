@@ -1,7 +1,7 @@
 import sys
 S = sys.stdin.readline().rstrip()
 KOREA = ['K', 'O', 'R', 'E', 'A']
-COUNT, CURRENT_LOCATION = 0, 0
+COUNT = 0
 while True:
     try:
         CURRENT_LOCATION = S.index(KOREA[COUNT%5])
