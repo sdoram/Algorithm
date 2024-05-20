@@ -1,7 +1,2 @@
-import sys
-input = sys.stdin.readline
-
-N = int(input())
-M = int(input(), 2)
-K = int(input())
-print("YES" if M % 2**K == 0 else "NO")
+input()
+print("YES" if int(input(), 2) % 2**int(input()) == 0 else "NO")
