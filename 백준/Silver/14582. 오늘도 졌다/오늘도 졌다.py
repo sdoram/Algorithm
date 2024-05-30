@@ -6,7 +6,7 @@ def baseball():
     B = list(map(int, input().split()))
     
     for i in range(1,len(A)+1):
-        if sum(A[0:i]) - sum(B[0:i-1]) > 0:
+        if sum(A[:i]) - sum(B[:i-1]) > 0:
             return 'Yes'
     return 'No'
 
