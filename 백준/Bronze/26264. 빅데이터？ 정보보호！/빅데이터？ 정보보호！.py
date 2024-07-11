@@ -1,0 +1,5 @@
+input()
+word = input()
+security = word.count('security')
+bigdata = word.count('bigdata') 
+print('security!' if security > bigdata else 'bigdata? security!' if security == bigdata else 'bigdata?')
