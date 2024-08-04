@@ -1,0 +1,1 @@
+print(len(set([''.join(sorted(input())) for _ in range(int(input()))])))
