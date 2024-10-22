@@ -5,4 +5,4 @@ def gcd(x, y):
         x, y = y, x % y
     return x
 
-print(A * B // gcd(max(A, B), min(A, B)))
+print(A * B // gcd(A, B))
