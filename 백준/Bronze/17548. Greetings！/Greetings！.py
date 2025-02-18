@@ -1,0 +1,1 @@
+print(''.join([i*2 if i == 'e' else i for i in input()]))
