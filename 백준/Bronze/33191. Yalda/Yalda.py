@@ -1,0 +1,5 @@
+A = int(input())
+B = int(input())
+C = int(input())
+D  = int(input())
+print('Watermelon' if A >= B else 'Pomegranates' if A >= C else 'Nuts' if A >= D else 'Nothing')
