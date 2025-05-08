@@ -1,0 +1,1 @@
+print(' '.join([str(i) for i, n in enumerate(bin(int(input()))[2:][::-1]) if n == '1']))
