@@ -1,0 +1,1 @@
+print('Oh My God!' if int(input()) <= 5 else 'Success!')
