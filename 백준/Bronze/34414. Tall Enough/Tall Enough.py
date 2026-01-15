@@ -1,0 +1,1 @@
+print('True' if min([int(input()) for _ in range(int(input()))]) > 47 else 'False')
